@@ -30,6 +30,10 @@ task clean(type: Delete) {
 }
 
 ext {
+    //Android dependencies
+    recyclerview_version = "1.0.0"
+
+    //Test dependencies
     assertj_version = "3.11.1"
     jUnit_version = "5.3.1"
     mockito_version = "2.19.0"
