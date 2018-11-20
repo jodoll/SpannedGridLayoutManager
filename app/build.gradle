@@ -33,7 +33,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
 
+    testImplementation "org.assertj:assertj-core:$assertj_version"
     testImplementation "org.mockito:mockito-core:$mockito_version"
+
     // (Required) Writing and executing Unit Tests on the JUnit Platform
     testImplementation "org.junit.jupiter:junit-jupiter-api:${jUnit_version}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jUnit_version}"
