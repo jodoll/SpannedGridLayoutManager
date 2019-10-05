@@ -1,17 +1,24 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
+apply from: '../versioning.gradle'
+
+ext {
+    versionMajor = 0
+    versionMinor = 0
+    buildNr = 1
+}
+
 android {
     compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode getVersionCode(versionMajor, versionMinor, buildNr)
+        versionName getVersionName(versionMajor, versionMinor, buildNr)
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
