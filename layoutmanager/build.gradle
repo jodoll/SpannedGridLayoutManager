@@ -45,9 +45,9 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnit_version"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnit_version"
 
-    androidTestImplementation 'androidx.test:core:1.2.0'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test:rules:1.2.0'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation "androidx.test:core:$androidx_test_version"
+    androidTestImplementation "androidx.test:runner:$androidx_test_version"
+    androidTestImplementation "androidx.test:rules:$androidx_test_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_testExt_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_testEspresso_version"
 }
