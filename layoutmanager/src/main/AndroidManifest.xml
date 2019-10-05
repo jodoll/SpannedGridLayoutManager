@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.johannesdoll.spannedgridlayoutmanager"/>
+<manifest package="com.johannesdoll.spannedgridlayoutmanager.layoutmanager" />
