@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: "de.mannodermaus.android-junit5"
 
 android {
     compileSdkVersion 28
@@ -29,6 +28,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+        }
+    }
 }
 
 dependencies {

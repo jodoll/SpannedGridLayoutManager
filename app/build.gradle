@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: "de.mannodermaus.android-junit5"
 
 android {
     compileSdkVersion 28
@@ -24,6 +23,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+        }
+    }
 }
 
 dependencies {
@@ -37,8 +42,8 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$mockito_version"
 
     // (Required) Writing and executing Unit Tests on the JUnit Platform
-    testImplementation "org.junit.jupiter:junit-jupiter-api:${jUnit_version}"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jUnit_version}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnit_version"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnit_version"
 
     androidTestImplementation "androidx.test:core:$androidx_test_version"
     androidTestImplementation "androidx.test:runner:$androidx_test_version"
