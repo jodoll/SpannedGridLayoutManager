@@ -6,7 +6,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.johannesdoll.spannedgridlayoutmanager"
+        applicationId "com.johannesdoll.spannedgridlayoutmanager.sample"
 
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
