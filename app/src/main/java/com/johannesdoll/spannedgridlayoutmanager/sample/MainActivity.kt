@@ -3,7 +3,7 @@ package com.johannesdoll.spannedgridlayoutmanager.sample
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.johannesdoll.spannedgridlayoutmanager.layoutmanager.SpannedGridLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         recyclerView.apply {
             adapter = this@MainActivity.adapter
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            layoutManager = SpannedGridLayoutManager()
         }
     }
 
