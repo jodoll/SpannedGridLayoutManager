@@ -38,9 +38,9 @@ ext {
     recyclerview_version = "1.0.0"
 
     //Test dependencies
-    assertj_version = "3.11.1"
+    assertK_version = '0.19'
     jUnit_version = "5.5.1"
-    mockito_version = "2.19.0"
+    mockk_version = '1.9'
     androidx_test_version = "1.2.0"
     androidx_testExt_version = "1.1.1"
     androidx_testEspresso_version = "3.2.0"

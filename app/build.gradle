@@ -38,12 +38,11 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appCompat_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayout_version"
 
-    testImplementation "org.assertj:assertj-core:$assertj_version"
-    testImplementation "org.mockito:mockito-core:$mockito_version"
-
-    // (Required) Writing and executing Unit Tests on the JUnit Platform
+    //Jvm UnitTests
     testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnit_version"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnit_version"
+    testImplementation "com.willowtreeapps.assertk:assertk-jvm:$assertK_version"
+    testImplementation "io.mockk:mockk:$mockk_version"
 
     androidTestImplementation "androidx.test:core:$androidx_test_version"
     androidTestImplementation "androidx.test:runner:$androidx_test_version"

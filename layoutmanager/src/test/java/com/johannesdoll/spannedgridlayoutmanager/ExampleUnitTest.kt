@@ -1,6 +1,7 @@
 package com.johannesdoll.spannedgridlayoutmanager
 
-import org.assertj.core.api.Assertions.assertThat
+import assertk.assertThat
+import assertk.assertions.isEqualTo
 import org.junit.jupiter.api.Test
 
 /**
