@@ -41,6 +41,8 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appCompat_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayout_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+    implementation "com.google.android.material:material:$material_version"
 
     //Jvm UnitTests
     testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnit_version"
